@@ -1,7 +1,7 @@
 import json ,  xmltree 
 
 
-proc json_to_xml(jsnode : JsonNode ) : XmlNode   = 
+proc json_to_xml*(jsnode : JsonNode ) : XmlNode   = 
     var chid_str = newElement("json")
     case jsnode.kind : 
         of JString : 
